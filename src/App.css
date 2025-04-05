@@ -1,0 +1,79 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../src/assets/fonts/Fira_Code/static/FiraCode-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../src/assets/fonts/Fira_Code/static/FiraCode-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../src/assets/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../src/assets/fonts/Source_Code_Pro/static/SourceCodePro-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#main-page {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --swiper-theme-color: #e6f1ff !important;
+}
+
+a.text-link {
+  text-decoration: none !important;
+  color: #64ffda !important;
+}
+
+a.text-link:hover {
+  text-decoration: underline !important;
+  color: #64ffda !important;
+}
+
+.icon {
+  color: #e6f1ff;
+}
+
+.icon:hover {
+  transform: translateY(-1px);
+  color: #64ffda;
+  cursor: pointer;
+}
