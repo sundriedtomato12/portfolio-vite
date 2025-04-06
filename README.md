@@ -16,7 +16,7 @@ This is my personal portfolio site where I showcase my projects, skills, and exp
 
 Clone the repo and install dependencies:
 
-```bash
+````bash
 git clone https://github.com/sundriedtomato12/portfolio-vite.git
 cd portfolio-vite
 npm install```
@@ -33,3 +33,4 @@ npm run build```
 
 🌍 Live Demo
 [Here](https://felcodes.onrender.com)
+````

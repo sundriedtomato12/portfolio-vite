@@ -189,11 +189,11 @@ export function MainPage() {
             </Grid>
             <Grid size={{ xs: isDesktop ? 9 : undefined }}>
               <Typography sx={{ fontSize: "16px", fontFamily: "Roboto" }}>
-                Hello! I&apos;m Fel. My interest in web development started in
-                high school when I learnt how to do stuff like customising my
-                cursor and changing the color and font of my Blogspot.com
-                chatbox. But I had only decided to pursue software engineering
-                as a career in 2021 by signing up for a bootcamp by{" "}
+                Hello! I&apos;m Fel. My interest in web development began in
+                high school when I learnt how to customise my Blogspot.com site
+                — tweaking things like the cursor, fonts, and chatbox design. In
+                2021, I decided to pursue software engineering as a career by
+                enrolling in a bootcamp at{" "}
                 <Link
                   className="text-link"
                   href="https://www.rocketacademy.co"
@@ -202,8 +202,8 @@ export function MainPage() {
                 >
                   Rocket Academy.
                 </Link>{" "}
-                Since graduating, I&apos;ve done multiple personal projects,
-                developed useful products at{" "}
+                Since graduating, I&apos;ve worked on various personal projects,
+                contributed to impactful products at{" "}
                 <Link
                   className="text-link"
                   href="https://www.circles.life"
