@@ -2,10 +2,14 @@ import SnippetsThumbnail from "../assets/images/snippets-thumbnail.png";
 import CombatChicksThumbnail from "../assets/images/combat-chicks-thumbnail.png";
 import PorkyPrintsThumbnail from "../assets/images/porky-prints-thumbnail.png";
 import KevinTheInternThumbnail from "../assets/images/kevin-the-intern-thumbnail.png";
+import KtaThumbnail from "../assets/images/kta-thumbnail.png";
+import PixelpalsThumbnail from "../assets/images/pixelpals-thumbnail.png";
 import SnippetsDemo from "../assets/videos/snippets-demo.mp4";
 import CombatChicksDemo from "../assets/videos/combat-chicks-demo.mp4";
 import PorkyPrintsDemo from "../assets/videos/porky-prints-demo.mp4";
 import KevinDemo from "../assets/videos/kevin-demo.mp4";
+import KtaDemo from "../assets/videos/kta-demo.mp4";
+import PixelpalsDemo from "../assets/videos/pixelpals-demo.mp4";
 
 export interface ProjectType {
   name: string;
@@ -19,6 +23,33 @@ export interface ProjectType {
 }
 
 export const projects: ProjectType[] = [
+  {
+    name: "PixelPals",
+    short: "Pet and habitat management casual game",
+    description:
+      "A pet and habitat management PWA game that integrates Web3 wallet connection, a leaderboard, level rewards, in-game purchases using USDT, and more.",
+    technologies: [
+      "Typescript",
+      "NestJs",
+      "React",
+      "Unity",
+      "Ethers",
+      "Solidity",
+    ],
+    thumbnail: PixelpalsThumbnail,
+    video: PixelpalsDemo,
+    url: "https://pixelpals.ai",
+  },
+  {
+    name: "Kevin The Adventurer",
+    short: "Side-scrolling casual game",
+    description:
+      "A side-scrolling casual browser-based game that integrates Web3 wallet connection, a leaderboard, daily rewards, and in-game purchases using ETH.",
+    technologies: ["Typescript", "Unity", "React", "NextJs", "WalletConnect"],
+    thumbnail: KtaThumbnail,
+    video: KtaDemo,
+    url: "https://kevin.pixelmon.ai",
+  },
   {
     name: "Kevin The Intern",
     short: "'AI' FAQ Chatbot for Pixelmon",
