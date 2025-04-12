@@ -10,7 +10,7 @@ export function SocialsBar() {
   return (
     <Box
       sx={{
-        position: "absolute",
+        position: "fixed",
         left: isDesktop ? "20px" : "2.5vw",
         bottom: "0px",
       }}
