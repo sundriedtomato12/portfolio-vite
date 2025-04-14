@@ -19,8 +19,8 @@ export function Slide(props: {
       <Paper
         sx={{
           backgroundColor: colorPalette.slate.lightest,
-          height: props.isDesktop ? "43vh" : "31vh",
-          width: props.isDesktop ? "33vw" : "100%",
+          height: props.isDesktop ? "48vh" : "34vh",
+          width: props.isDesktop ? "56vw" : "100%",
           padding: "14px 18px 14px 18px",
           "&:hover": { cursor: "pointer" },
         }}
@@ -28,12 +28,12 @@ export function Slide(props: {
           props.setIsSlideClicked(true);
         }}
       >
-        <Box sx={{ mb: props.isDesktop ? "12px" : "6px" }}>
+        <Box sx={{ mb: props.isDesktop ? "12px" : "8px" }}>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
             <Typography
               sx={{
                 fontFamily: "Fira Code",
-                fontSize: props.isDesktop ? "20px" : "14px",
+                fontSize: props.isDesktop ? "20px" : "16px",
                 fontWeight: 700,
               }}
             >
@@ -46,7 +46,7 @@ export function Slide(props: {
                     color: colorPalette.green.light,
                     cursor: "pointer",
                   },
-                  fontSize: props.isDesktop ? "24px" : "14px",
+                  fontSize: props.isDesktop ? "24px" : "18px",
                   fontWeight: "700",
                   color: colorPalette.slate.dark,
                 }}
@@ -60,7 +60,7 @@ export function Slide(props: {
                     color: colorPalette.green.light,
                     cursor: "pointer",
                   },
-                  fontSize: props.isDesktop ? "24px" : "14px",
+                  fontSize: props.isDesktop ? "24px" : "18px",
                   fontWeight: "700",
                   color: colorPalette.slate.dark,
                 }}
@@ -71,7 +71,7 @@ export function Slide(props: {
           <Typography
             sx={{
               fontFamily: "Roboto",
-              fontSize: props.isDesktop ? "16px" : "12px",
+              fontSize: props.isDesktop ? "16px" : "14px",
             }}
           >
             {props.description}
@@ -87,10 +87,10 @@ export function Slide(props: {
           }}
         >
           <Box
-            component={"img"}
+            component="img"
             src={props.thumbnail}
-            maxHeight={"100%"}
-            maxWidth={"98%"}
+            height="100%"
+            width="100%"
             sx={{ borderRadius: "4px" }}
           />
         </Box>

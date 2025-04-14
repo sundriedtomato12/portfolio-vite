@@ -11,8 +11,12 @@ export function SocialsBar() {
     <Box
       sx={{
         position: "fixed",
-        left: isDesktop ? "20px" : "2.5vw",
-        bottom: "0px",
+        bottom: 0,
+        left: isDesktop ? "32px" : "8px",
+        zIndex: 99,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Stack direction="column" spacing={2} alignItems={"center"}>

@@ -23,8 +23,8 @@ export function ProjectDialog(props: {
         <Paper
           sx={{
             backgroundColor: colorPalette.slate.lightest,
-            height: props.isDesktop ? "60vh" : "70%",
-            width: props.isDesktop ? "44vw" : "100%",
+            height: props.isDesktop ? "55vh" : "70%",
+            width: props.isDesktop ? "52vw" : "100%",
             padding: "16px 20px 16px 20px",
           }}
         >
@@ -33,7 +33,7 @@ export function ProjectDialog(props: {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                mb: "8px",
+                marginBottom: "4px",
               }}
             >
               <Typography
@@ -55,7 +55,7 @@ export function ProjectDialog(props: {
                       color: colorPalette.green.light,
                       cursor: "pointer",
                     },
-                    fontSize: props.isDesktop ? "24px" : "14px",
+                    fontSize: props.isDesktop ? "24px" : "18px",
                     fontWeight: "700",
                     color: colorPalette.slate.dark,
                   }}
@@ -66,7 +66,8 @@ export function ProjectDialog(props: {
             <Typography
               sx={{
                 fontFamily: "Roboto",
-                fontSize: props.isDesktop ? "16px" : "12px",
+                fontSize: props.isDesktop ? "16px" : "14px",
+                marginBottom: props.isDesktop ? "0px" : "12px",
               }}
             >
               {props.description} Built using{" "}
@@ -93,19 +94,19 @@ export function ProjectDialog(props: {
               justifyContent: "center",
               alignItems: "center",
               width: "100%",
-              height: props.isDesktop ? "44vh" : "60%",
+              height: props.isDesktop ? "38vh" : "60%",
             }}
           >
             <Box
-              component={"video"}
+              component="video"
               src={props.video}
               autoPlay
               loop
               playsInline
               muted
               disablePictureInPicture
-              maxHeight={"100%"}
-              maxWidth={"100%"}
+              maxHeight="100%"
+              maxWidth="100%"
               sx={{ borderRadius: "4px" }}
             />
           </Box>

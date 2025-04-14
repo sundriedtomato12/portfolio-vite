@@ -64,12 +64,14 @@ export function MainPage() {
           height: "100vh",
           backgroundColor: colorPalette.navy.dark,
           overflowY: "scroll",
+          overflowX: "hidden",
           padding: isDesktop ? "0px 24px 0px 24px" : "0px 10px 0px 10px",
+          width: "100%",
         }}
       >
         <Box
           id="home"
-          height={"100vh"}
+          height="100vh"
           sx={{
             paddingX: "10vw",
             display: "flex",
@@ -77,7 +79,7 @@ export function MainPage() {
             alignItems: "left",
             justifyContent: "center",
             color: colorPalette.white,
-            maxWidth: "1200px",
+            width: "100%",
           }}
         >
           <Box sx={{ display: isDesktop ? "flex" : "block" }}>
@@ -135,16 +137,16 @@ export function MainPage() {
         </Box>
         <Box
           id="about"
-          height={isDesktop ? "100vh" : "fit-content"}
+          height="100vh"
           sx={{
-            pb: isDesktop ? 0 : "16vh",
+            paddingBottom: isDesktop ? 0 : "16vh",
             paddingX: "10vw",
             display: "flex",
             flexDirection: "column",
             alignItems: "left",
-            justifyContent: "left",
+            justifyContent: "center",
             color: colorPalette.white,
-            maxWidth: "1000px",
+            width: "100%",
           }}
         >
           <Typography
@@ -179,10 +181,10 @@ export function MainPage() {
                 className="profile"
                 src={Profile}
                 sx={{
-                  marginTop: isDesktop ? "0px" : "16px",
+                  marginY: isDesktop ? "0px" : "16px",
                   height: "clamp(120px, 20vh, 160px)",
-                  width: "auto",
-                  overflow: "clip",
+                  width: "clamp(120px, 20vh, 160px)",
+                  objectFit: "cover",
                   borderRadius: "100px",
                 }}
               />
@@ -269,15 +271,15 @@ export function MainPage() {
         </Box>
         <Box
           id="projects"
-          height={"100vh"}
+          height="100vh"
           sx={{
             paddingX: "10vw",
             display: "flex",
             flexDirection: "column",
             alignItems: "left",
-            justifyContent: "left",
+            justifyContent: "center",
             color: colorPalette.white,
-            maxWidth: "1200px",
+            width: "100%",
           }}
         >
           <Typography
@@ -293,7 +295,7 @@ export function MainPage() {
             Projects
           </Typography>
           <Typography
-            sx={{ fontSize: "16px", fontFamily: "Roboto", mb: "20px" }}
+            sx={{ fontSize: "16px", fontFamily: "Roboto", mb: isDesktop ? "32px" : "24px" }}
           >
             {isDesktop
               ? "Check out some stuff I built! Click on each slide to view more details."
@@ -329,14 +331,14 @@ export function MainPage() {
         </Box>
         <Box
           id="contact"
-          height={"72vh"}
+          height="100vh"
           sx={{
             paddingX: "10vw",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
             color: colorPalette.white,
-            maxWidth: "1200px",
+            width: "100%",
           }}
         >
           <Box
@@ -344,6 +346,7 @@ export function MainPage() {
               display: "flex",
               alignItems: "left",
               flexDirection: "column",
+              marginTop: "31vh",
             }}
           >
             <Typography
