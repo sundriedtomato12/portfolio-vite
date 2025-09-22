@@ -223,7 +223,7 @@ export function MainPage() {
                 >
                   Pixelmon
                 </Link>
-                , and I am now building software tools for the built world at{' '}
+                , and I am now working on software for the built world at{' '}
                 <Link
                   className='text-link'
                   href='https://sitemate.com'
