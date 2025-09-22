@@ -52,82 +52,82 @@ export function MainPage() {
   ));
 
   return (
-    <Box style={{ width: "100%" }}>
+    <Box style={{ width: '100%' }}>
       <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Box
         ref={ref}
         onScroll={() => {
-          handleScroll(ref, setCurrentPage);
+          handleScroll(ref, setCurrentPage)
         }}
-        className="main-page"
+        className='main-page'
         style={{
-          height: "100vh",
+          height: '100vh',
           backgroundColor: colorPalette.navy.dark,
-          overflowY: "scroll",
-          overflowX: "hidden",
-          padding: isDesktop ? "0px 24px 0px 24px" : "0px 10px 0px 10px",
-          width: "100%",
+          overflowY: 'scroll',
+          overflowX: 'hidden',
+          padding: isDesktop ? '0px 24px 0px 24px' : '0px 10px 0px 10px',
+          width: '100%'
         }}
       >
         <Box
-          id="home"
-          height="100vh"
+          id='home'
+          height='100vh'
           sx={{
-            paddingX: "10vw",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "left",
-            justifyContent: "center",
+            paddingX: '10vw',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'left',
+            justifyContent: 'center',
             color: colorPalette.white,
-            width: "100%",
+            width: '100%'
           }}
         >
-          <Box sx={{ display: isDesktop ? "flex" : "block" }}>
+          <Box sx={{ display: isDesktop ? 'flex' : 'block' }}>
             <Typography
               sx={{
-                fontSize: isDesktop ? "32px" : "24px",
+                fontSize: isDesktop ? '32px' : '24px',
                 color: colorPalette.green.light,
-                fontFamily: "Roboto",
-                marginRight: "12px",
+                fontFamily: 'Roboto',
+                marginRight: '12px'
               }}
             >
               Hey! My name is
             </Typography>
             <Typography
               sx={{
-                fontSize: isDesktop ? "32px" : "24px",
+                fontSize: isDesktop ? '32px' : '24px',
                 color: colorPalette.green.light,
-                fontFamily: "Fira Code",
+                fontFamily: 'Fira Code'
               }}
             >
               Felicia Tan,
             </Typography>
           </Box>
           <Box
-            sx={{ marginBottom: "12px", display: isDesktop ? "flex" : "block" }}
+            sx={{ marginBottom: '12px', display: isDesktop ? 'flex' : 'block' }}
           >
             <Typography
               sx={{
-                fontSize: isDesktop ? "32px" : "24px",
+                fontSize: isDesktop ? '32px' : '24px',
                 color: colorPalette.green.light,
-                fontFamily: "Roboto",
-                marginRight: "12px",
+                fontFamily: 'Roboto',
+                marginRight: '12px'
               }}
             >
               but you can call me
             </Typography>
             <Typography
               sx={{
-                fontSize: isDesktop ? "32px" : "24px",
+                fontSize: isDesktop ? '32px' : '24px',
                 color: colorPalette.green.light,
-                fontFamily: "Fira Code",
-                fontWeight: 700,
+                fontFamily: 'Fira Code',
+                fontWeight: 700
               }}
             >
               Fel.
             </Typography>
           </Box>
-          <Typography sx={{ fontSize: "16px", fontFamily: "Roboto" }}>
+          <Typography sx={{ fontSize: '16px', fontFamily: 'Roboto' }}>
             I&apos;m a Full Stack Software Engineer based in Singapore with a
             passion for exploring new technologies and creating innovative
             digital products. With a keen eye for design, I&apos;m passionate
@@ -136,26 +136,26 @@ export function MainPage() {
           </Typography>
         </Box>
         <Box
-          id="about"
-          height="100vh"
+          id='about'
+          height='100vh'
           sx={{
-            paddingBottom: isDesktop ? 0 : "16vh",
-            paddingX: "10vw",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "left",
-            justifyContent: "center",
+            paddingBottom: isDesktop ? 0 : '16vh',
+            paddingX: '10vw',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'left',
+            justifyContent: 'center',
             color: colorPalette.white,
-            width: "100%",
+            width: '100%'
           }}
         >
           <Typography
             sx={{
-              marginTop: isDesktop ? "15vh" : "10vh",
-              fontSize: isDesktop ? "32px" : "24px",
+              marginTop: isDesktop ? '15vh' : '10vh',
+              fontSize: isDesktop ? '32px' : '24px',
               fontWeight: 700,
-              fontFamily: "Fira Code",
-              color: colorPalette.green.light,
+              fontFamily: 'Fira Code',
+              color: colorPalette.green.light
             }}
           >
             About me
@@ -163,71 +163,79 @@ export function MainPage() {
           <Grid
             container
             sx={{
-              display: "flex",
-              flexDirection: isDesktop ? "row-reverse" : "column",
-              alignItems: "center",
+              display: 'flex',
+              flexDirection: isDesktop ? 'row-reverse' : 'column',
+              alignItems: 'center'
             }}
             spacing={isDesktop ? 6 : undefined}
           >
             <Grid
               size={{ xs: isDesktop ? 3 : undefined }}
               sx={{
-                display: "flex",
-                justifyContent: isDesktop ? "right" : "center",
+                display: 'flex',
+                justifyContent: isDesktop ? 'right' : 'center'
               }}
             >
               <Box
-                component="img"
-                className="profile"
+                component='img'
+                className='profile'
                 src={Profile}
                 sx={{
-                  marginY: isDesktop ? "0px" : "16px",
-                  height: "clamp(120px, 20vh, 160px)",
-                  width: "clamp(120px, 20vh, 160px)",
-                  objectFit: "cover",
-                  borderRadius: "100px",
+                  marginY: isDesktop ? '0px' : '16px',
+                  height: 'clamp(120px, 20vh, 160px)',
+                  width: 'clamp(120px, 20vh, 160px)',
+                  objectFit: 'cover',
+                  borderRadius: '100px'
                 }}
               />
             </Grid>
             <Grid size={{ xs: isDesktop ? 9 : undefined }}>
-              <Typography sx={{ fontSize: "16px", fontFamily: "Roboto" }}>
+              <Typography sx={{ fontSize: '16px', fontFamily: 'Roboto' }}>
                 Hello! I&apos;m Fel. My interest in web development began in
                 high school when I learnt how to customise my Blogspot.com site
                 — tweaking things like the cursor, fonts, and chatbox design. In
                 2021, I decided to pursue software engineering as a career by
-                enrolling in a bootcamp at{" "}
+                enrolling in a bootcamp at{' '}
                 <Link
-                  className="text-link"
-                  href="https://www.rocketacademy.co"
-                  target="_blank"
-                  rel="noreferrer"
+                  className='text-link'
+                  href='https://www.rocketacademy.co'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Rocket Academy.
-                </Link>{" "}
+                </Link>{' '}
                 Since graduating, I&apos;ve worked on various personal projects,
-                contributed to impactful products at{" "}
+                contributed to impactful products at{' '}
                 <Link
-                  className="text-link"
-                  href="https://www.circles.life"
-                  target="_blank"
-                  rel="noreferrer"
+                  className='text-link'
+                  href='https://www.circles.life'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Circles.Life
                 </Link>
-                , and I am currently working on some really exciting digital
-                products at{" "}
+                , built some really cool digital products at{' '}
                 <Link
-                  className="text-link"
-                  href="https://pixelmon.ai"
-                  target="_blank"
-                  rel="noreferrer"
+                  className='text-link'
+                  href='https://pixelmon.ai'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Pixelmon
+                </Link>
+                , and I am now building software tools for the built world at{' '}
+                <Link
+                  className='text-link'
+                  href='https://sitemate.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Sitemate
                 </Link>
                 .
               </Typography>
               <Typography
-                sx={{ fontSize: "16px", fontFamily: "Roboto", my: "6px" }}
+                sx={{ fontSize: '16px', fontFamily: 'Roboto', my: '6px' }}
               >
                 Here are some technologies that I&apos;ve been working with
                 recently:
@@ -235,34 +243,34 @@ export function MainPage() {
               <Grid
                 container
                 size={12}
-                sx={{ display: "flex", flexDirection: "row" }}
+                sx={{ display: 'flex', flexDirection: 'row' }}
               >
-                <Stack sx={{ marginRight: "24px" }}>
-                  <Typography sx={{ display: "flex" }}>
+                <Stack sx={{ marginRight: '24px' }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
                     Typescript
                   </Typography>
-                  <Typography sx={{ display: "flex" }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
                     NodeJs
                   </Typography>
-                  <Typography sx={{ display: "flex" }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
-                    NestJs
+                    Angular
                   </Typography>
                 </Stack>
                 <Stack>
-                  <Typography sx={{ display: "flex" }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
                     React
                   </Typography>
-                  <Typography sx={{ display: "flex" }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
                     NextJs
                   </Typography>
-                  <Typography sx={{ display: "flex" }}>
+                  <Typography sx={{ display: 'flex' }}>
                     <GreenArrowIcon />
-                    Solidity
+                    Angular
                   </Typography>
                 </Stack>
               </Grid>
@@ -270,48 +278,52 @@ export function MainPage() {
           </Grid>
         </Box>
         <Box
-          id="projects"
-          height="100vh"
+          id='projects'
+          height='100vh'
           sx={{
-            paddingX: "10vw",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "left",
-            justifyContent: "center",
+            paddingX: '10vw',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'left',
+            justifyContent: 'center',
             color: colorPalette.white,
-            width: "100%",
+            width: '100%'
           }}
         >
           <Typography
             sx={{
-              mt: isDesktop ? "15vh" : "10vh",
-              mb: "16px",
-              fontSize: isDesktop ? "32px" : "24px",
+              mt: isDesktop ? '15vh' : '10vh',
+              mb: '16px',
+              fontSize: isDesktop ? '32px' : '24px',
               fontWeight: 700,
-              fontFamily: "Fira Code",
-              color: colorPalette.green.light,
+              fontFamily: 'Fira Code',
+              color: colorPalette.green.light
             }}
           >
             Projects
           </Typography>
           <Typography
-            sx={{ fontSize: "16px", fontFamily: "Roboto", mb: isDesktop ? "32px" : "24px" }}
+            sx={{
+              fontSize: '16px',
+              fontFamily: 'Roboto',
+              mb: isDesktop ? '32px' : '24px'
+            }}
           >
             {isDesktop
-              ? "Check out some stuff I built! Click on each slide to view more details."
-              : "Swipe to view more projects, or tap on each slide to view more details."}
+              ? 'Check out some stuff I built! Click on each slide to view more details.'
+              : 'Swipe to view more projects, or tap on each slide to view more details.'}
           </Typography>
-          <Box height={"60vh"}>
+          <Box height={'60vh'}>
             <Swiper
-              direction={"horizontal"}
+              direction={'horizontal'}
               slidesPerView={1}
               navigation={!!isDesktop}
               pagination={{ clickable: true }}
               centeredSlides={true}
               modules={[Pagination, Navigation]}
-              className="project-swiper"
+              className='project-swiper'
               onSlideChangeTransitionStart={(slide) => {
-                setSlideClicked(projects[slide.activeIndex]);
+                setSlideClicked(projects[slide.activeIndex])
               }}
             >
               {projectSlides}
@@ -330,64 +342,64 @@ export function MainPage() {
           />
         </Box>
         <Box
-          id="contact"
-          height="100vh"
+          id='contact'
+          height='100vh'
           sx={{
-            paddingX: "10vw",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
+            paddingX: '10vw',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
             color: colorPalette.white,
-            width: "100%",
+            width: '100%'
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              alignItems: "left",
-              flexDirection: "column",
-              marginTop: "31vh",
+              display: 'flex',
+              alignItems: 'left',
+              flexDirection: 'column',
+              marginTop: '31vh'
             }}
           >
             <Typography
               sx={{
-                marginTop: isDesktop ? "15vh" : "8vh",
-                fontSize: "28px",
+                marginTop: isDesktop ? '15vh' : '8vh',
+                fontSize: '28px',
                 fontWeight: 700,
-                fontFamily: "Fira Code",
-                color: colorPalette.green.light,
+                fontFamily: 'Fira Code',
+                color: colorPalette.green.light
               }}
             >
               Get in touch
             </Typography>
             <Typography
-              sx={{ mt: "14px", fontSize: "16px", fontFamily: "Roboto" }}
+              sx={{ mt: '14px', fontSize: '16px', fontFamily: 'Roboto' }}
             >
               Feel free to drop me an email or message me on LinkedIn if
               you&apos;d like to connect!
             </Typography>
-            <Box sx={{ mt: "14px" }}>
+            <Box sx={{ mt: '14px' }}>
               <MailIcon
-                className="icon"
-                sx={{ fontSize: "32px", mr: "12px" }}
+                className='icon'
+                sx={{ fontSize: '32px', mr: '12px' }}
                 onClick={() =>
-                  window.open("mailto:felicia.tanwp@gmail.com", "_blank")
+                  window.open('mailto:felicia.tanwp@gmail.com', '_blank')
                 }
               />
               <LinkedInIcon
-                className="icon"
-                sx={{ fontSize: "32px", mr: "12px" }}
+                className='icon'
+                sx={{ fontSize: '32px', mr: '12px' }}
                 onClick={() =>
-                  window.open("https://www.linkedin.com/in/-fel", "_blank")
+                  window.open('https://www.linkedin.com/in/-fel', '_blank')
                 }
               />
               <GitHubIcon
-                sx={{ fontSize: "32px" }}
-                className="icon"
+                sx={{ fontSize: '32px' }}
+                className='icon'
                 onClick={() =>
                   window.open(
-                    "https://www.github.com/sundriedtomato12",
-                    "_blank",
+                    'https://www.github.com/sundriedtomato12',
+                    '_blank'
                   )
                 }
               />
@@ -395,31 +407,31 @@ export function MainPage() {
           </Box>
           <Box
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              pb: "10px",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              pb: '10px'
             }}
           >
             <Typography
-              fontSize={isDesktop ? "13px" : "10px"}
-              fontFamily={"Fira Code"}
+              fontSize={isDesktop ? '13px' : '10px'}
+              fontFamily={'Fira Code'}
               color={colorPalette.slate.light}
             >
               Built by Felicia Tan, 2025
             </Typography>
             <GitHubIcon
-              className="icon"
+              className='icon'
               sx={{
-                fontSize: isDesktop ? "14px" : "10px",
+                fontSize: isDesktop ? '14px' : '10px',
                 color: colorPalette.slate.light,
-                ml: "6px",
-                mb: "2px",
+                ml: '6px',
+                mb: '2px'
               }}
               onClick={() =>
                 window.open(
-                  "https://github.com/sundriedtomato12/portfolio",
-                  "_blank",
+                  'https://github.com/sundriedtomato12/portfolio',
+                  '_blank'
                 )
               }
             />
@@ -428,5 +440,5 @@ export function MainPage() {
       </Box>
       <SocialsBar />
     </Box>
-  );
+  )
 }
